@@ -1,0 +1,12 @@
+.nav-item {
+  a {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 2rem;
+    color: #86868b;
+  }
+  .active {
+    color: #222222;
+    border-bottom: 2px solid #1d97e1;
+  }
+}
