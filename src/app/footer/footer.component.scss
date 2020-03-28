@@ -1,0 +1,18 @@
+.footer--contact {
+}
+.color-grey {
+  color: #86868b;
+}
+.breadcrumb > li + li::before {
+  content: "|";
+  color: #ececec;
+}
+.breadcrumb-footer {
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+.breadcrumb {
+  background-color: transparent;
+}

@@ -2,6 +2,135 @@
   margin-top: 2rem;
 }
 .card-body {
+  &--btn {
+    span {
+      color: #fff;
+    }
+  }
   &__profile-head {
+  }
+  &--form {
+    label {
+      color: #222222;
+      font-weight: 700;
+    }
+  }
+}
+
+.btn {
+  &--gradient-primary {
+    background: rgb(37, 94, 214);
+    background: linear-gradient(
+      143deg,
+      rgba(37, 94, 214, 1) 0%,
+      rgba(21, 208, 237, 1) 100%
+    );
+  }
+}
+.card-title {
+  font-weight: 700;
+  position: relative;
+  i {
+    color: #15d0ed;
+    font-size: 1.5rem;
+  }
+}
+.icon-plus {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: rgb(37, 94, 214);
+  background: linear-gradient(
+    143deg,
+    rgba(37, 94, 214, 1) 0%,
+    rgba(21, 208, 237, 1) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-100%, 0);
+  i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+  }
+}
+
+.text-grey {
+  color: #89898e;
+}
+.bg-grey {
+  background-color: #f5f5f6;
+}
+
+.container-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container-radio input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.container-radio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.icon-trash {
+  font-size: 0.7rem;
+  color: #86868b;
+}
+@media (max-width: 767.98px) {
+  .card-body__profile-head {
+    img {
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
   }
 }
